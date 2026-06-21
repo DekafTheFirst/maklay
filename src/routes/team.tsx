@@ -16,9 +16,9 @@ export const Route = createFileRoute("/team")({
 });
 
 const team = [
-  { img: team1, name: "Pharm. Adaeze Okonkwo", role: "Superintendent Pharmacist", bio: "10+ years experience in community pharmacy and chronic disease management." },
-  { img: team2, name: "Pharm. Tunde Adeyemi", role: "Lead Pharmacist", bio: "Specialist in cardiology and prescription review. Loves patient education." },
-  { img: team3, name: "Chiamaka Eze", role: "Pharmacy Technician", bio: "The warm face at our counter. Helps you find exactly what you need." },
+  { img: team1, name: "Pharm.", role: "Superintendent Pharmacist", bio: "10+ years experience in community pharmacy and chronic disease management." },
+  { img: team2, name: "Pharm.", role: "Lead Pharmacist", bio: "Specialist in cardiology and prescription review. Loves patient education." },
+  { img: team3, name: "Pharm.", role: "Pharmacy Technician", bio: "The warm face at our counter. Helps you find exactly what you need." },
 ];
 
 function Team() {

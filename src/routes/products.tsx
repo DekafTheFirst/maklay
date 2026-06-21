@@ -72,8 +72,14 @@ function Products() {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {filtered.map((p) => (
               <div key={p.id} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-glow">
-                <div className={`flex aspect-square items-center justify-center bg-gradient-to-br ${p.gradient} text-7xl transition-transform duration-500 group-hover:scale-105`}>
-                  {p.emoji}
+                <div className="relative flex aspect-[5/4] items-center justify-center overflow-hidden">
+                  {/* background image with gradient tint */}
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-br ${p.gradient} opacity-40`}></div>
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">{p.category}</span>
